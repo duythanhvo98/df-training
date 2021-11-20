@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(../public/fonts/SourceSansPro-Regular.ttf);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 410px;
+  background-color: #fff;
+  border: 2px solid #ececec;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 20px;
+  border-bottom: 2px solid #ececec;
+}
+
+.card-body > .highlight-measure {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.card-body > .highlight-measure > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.card-body > .highlight-measure > div > span {
+  padding: 5px 10px;
+  width: 50px;
+  color: #fff;
+  background-color: #cf3c2a;
+  border-radius: 25px;
+}
+
+.card-body > .normal-measure > div {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.card-body > .normal-measure > div > span:nth-child(1) {
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  background-color: #cf3c2a;
+  border-radius: 25px;
+  margin-right: 8px;
+}
+
+.card-body > .normal-measure > div > span:nth-child(2) {
+  color: #325f7e;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.card-footer > a, .card-footer > span {
+  color: #325f7e;
+}
+
+.card-footer > a:hover, .card-footer > span:hover {
+  cursor: pointer;
+  color: #1184bd;
+}
